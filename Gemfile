@@ -23,6 +23,9 @@ group :production do
   gem 'rails_12factor'
 end
 
+# User Authentication
+gem 'devise', '~> 3.5.2'
+
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
