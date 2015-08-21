@@ -14,13 +14,11 @@ RSpec.describe PostsController, :type => :controller do
       expect(response).to render_template("index")
     end
   end
-end
 
-RSpec.describe PostsController do
   describe 'POST #create' do
     context 'with valid attributes' do
       it 'creates the post' do
-        post :create, post: attributes_for(:post)
+        post :create, post: form_for(:post)
         expect(Post.count).to eq(1)
       end
 
