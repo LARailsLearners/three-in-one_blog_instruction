@@ -13,9 +13,12 @@
 
   <div id="sidebar">
     <ul>
-      <li class="category">Websites</li>
-      <li><%= link_to "Blog", root_path %></li>
+      <li class="category">This Site</li>
+      <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "New Post", new_post_path %></li>
+      <li><%= link_to "Sign in", new_user_session_path %></li>
+      <li><%= link_to "Sign up", new_user_registration_path %></li>
     </ul>
     <ul>
       <li class="category">Social</li>
@@ -24,7 +27,7 @@
       <li><a href="https://twitter.com/jendiamond">Twitter</a></li>
     </ul>
     <% if !user_signed_in? %>
-    <p class="sign_in">Admin login</p>
+      <p class="sign_in">Admin login</p>
     <% end %>
   </div>
 
