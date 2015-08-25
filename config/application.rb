@@ -22,5 +22,7 @@ module Phoebesblog
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    # http://stackoverflow.com/questions/23073737/sign-out-not-working-on-heroku-using-devise-gem-and-rails-4
+    config.serve_static_assets = true
   end
 end
